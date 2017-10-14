@@ -1,0 +1,16 @@
+<div class="jumbotron">
+  <h1>User List</h1>
+  <table class="table">
+    <thead><tr><th>id</th><th>name</th><th>age</th></tr></thead>
+    <tbody>
+      <tr ng-repeat="obj in userList">
+        <td class="danger" ng-show="obj.id == 1">{{obj.id}}</td>
+        <td class="danger" ng-show="obj.id == 1">{{obj.name}}</td>
+        <td class="danger" ng-show="obj.id == 1">{{obj.age}}</td>
+        <td ng-show="obj.id != 1">{{obj.id}}</td>
+        <td ng-show="obj.id != 1">{{obj.name}}</td>
+        <td ng-show="obj.id != 1">{{obj.age}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
